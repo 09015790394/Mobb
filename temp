@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Apadana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // دو عدد از ورودی گرفته و جای آنها را با هم عوض کند.
+            int m, n, temp;
+
+            Console.WriteLine("Please enter 2 numbrs:");
+
+            m = int.Parse(Console.ReadLine());
+            n = int.Parse(Console.ReadLine());
+
+            temp = m;
+            m = n;
+            n = temp;
+
+            Console.WriteLine(" m is: " + m + "  n is: " + n);
+            Console.WriteLine("press any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}

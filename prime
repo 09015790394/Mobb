@@ -1,0 +1,40 @@
+﻿/******************************************************************************
+
+*******************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Apadana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+         //عددی را از ورودی گرفته و نشان دهد آیا عدد اول است یا خیر
+            int num, i = 2;
+            string res = "prim اول";
+
+            Console.WriteLine("Please enter 1 number:");
+
+            num = int.Parse(Console.ReadLine());
+
+            while (i < num)
+            {
+                if (num % i == 0)
+                {
+                    res = "not prim اول نیست ";
+                    break;
+                }
+                i++;
+            }
+
+            Console.WriteLine("The num is " + res);
+            Console.WriteLine("press any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}
+

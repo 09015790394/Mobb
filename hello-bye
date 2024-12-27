@@ -1,0 +1,34 @@
+/******************************************************************************
+
+*******************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Apadana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           // سن کاربر را گرفته بین 20-30 بود سلام کند وگرنه خدافظی کند
+            int Age ;
+            string res;
+
+            Console.WriteLine("Please enter your Age:");
+            Age = int.Parse(Console.ReadLine());
+            
+                if (Age>20 && Age<30)
+                {
+                   res = "Hello";
+                }else{
+                    res = "Bye";
+                }
+
+            Console.WriteLine(res+"dear... ");
+            Console.ReadKey();
+        }      
+    }
+}

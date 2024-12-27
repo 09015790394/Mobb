@@ -1,0 +1,34 @@
+/******************************************************************************
+
+*******************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text; 
+using System.Threading.Tasks;
+
+namespace Apadana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //عدد از ورودی بگیرد و چک کند عدد چند رقمی است
+        int n , i = 0;
+        
+        Console.WriteLine("Please enter a num:");
+         n = int.Parse(Console.ReadLine());
+         
+         while (n!= 0)
+         {
+                 n= n / 10;
+                 i++;
+             
+         };
+            
+             Console.WriteLine("num is" + i +" digits.");
+             Console.ReadKey();
+        }
+        
+    }
+}  

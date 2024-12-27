@@ -1,0 +1,30 @@
+/******************************************************************************
+
+*******************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Apadana
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+          // دو عدد از ورودی بگیرید و میانگین آن را نشان دهید 
+            float m;
+            float n;
+            float avg;
+
+            Console.WriteLine("Please Enter 2 numbers");
+            m = float.Parse(Console.ReadLine());
+            n = float.Parse(Console.ReadLine());
+            avg = (m + n) / 2;
+
+            Console.WriteLine ("avg is" + avg);
+            //Console.ReadKey();
+        }
+    }
+}
